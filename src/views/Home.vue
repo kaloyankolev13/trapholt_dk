@@ -1,7 +1,9 @@
 <template>
   <div id="container">
     <div class="slider">
-      <h1>Hello</h1>
+      <div class="slider-text">
+        <h1>Hello</h1>
+      </div>
     </div>
   </div>
 </template>
@@ -12,8 +14,20 @@ export default {};
 
 <style lang="scss" scoped>
 #container {
-  width: auto;
-  height: 1200px;
+  width: 100%;
+  height: auto;
   background: linear-gradient(#1a356c, #0f2043);
+  margin: auto;
+  text-align: center;
+}
+.slider {
+  background: url(../assets/images/home-main.png) no-repeat center center;
+  margin: auto;
+  height: 1200px;
+}
+.slider-text {
+  text-align: left;
+  width: 1500px;
+  margin: auto;
 }
 </style>
