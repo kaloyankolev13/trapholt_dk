@@ -27,7 +27,7 @@ export default {};
 }
 .slider-text {
   text-align: left;
-  width: 1500px;
+  width: 1200px;
   margin: auto;
 }
 </style>
