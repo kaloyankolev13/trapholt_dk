@@ -16,14 +16,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  a {
-    text-decoration: none;
-    color: #f3f3f3;
-    &.router-link-active {
-      color: #3498db;
-    }
-  }
+  color: #f3f3f3;
 }
 </style>
 <script>

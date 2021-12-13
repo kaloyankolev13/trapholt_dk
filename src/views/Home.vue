@@ -1,33 +1,21 @@
 <template>
-  <div id="container">
-    <div class="slider">
-      <div class="slider-text">
-        <h1>Hello</h1>
-      </div>
-    </div>
+  <div>
+    <Slider />
+    <h1 style="color: black" class="hello">hello</h1>
   </div>
 </template>
 
 <script>
-export default {};
+import Slider from "../components/Slider.vue";
+export default {
+  components: {
+    Slider,
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-#container {
-  width: 100%;
-  height: auto;
-  background: linear-gradient(#1a356c, #0f2043);
-  margin: auto;
-  text-align: center;
-}
-.slider {
-  background: url(../assets/images/home-main.png) no-repeat center center;
-  margin: auto;
-  height: 1200px;
-}
-.slider-text {
-  text-align: left;
-  width: 1200px;
-  margin: auto;
+.hello {
+  margin-top: -100px;
 }
 </style>
