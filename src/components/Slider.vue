@@ -35,10 +35,10 @@
             </g>
           </svg>
 
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>.</li>
+          <li>.</li>
+          <li>.</li>
+          <li>.</li>
         </ul>
       </div>
       <div class="slider-text">
@@ -55,6 +55,10 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+li {
+  font-size: 40px;
+  list-style: none;
+}
 #container {
   height: auto;
   background: linear-gradient(#1a356c, #0f2043);
