@@ -67,10 +67,25 @@
         <p class="orange-text">> School trip at trapholt</p>
       </div>
       <div class="right-block">
-        <p>Æblehaven 23</p>
-        <p>Kolding 6000</p>
+        <div class="location">
+          <p>Æblehaven 23</p>
+          <p>Kolding 6000</p>
+        </div>
+        <p class="orange-text">--------- Get directions</p>
       </div>
     </div>
+    <img src="../assets/images/detail-d.png" alt="Detail" class="detail" />
+    <div class="student-d">
+      <div class="student-text">
+        <h1>Student discounts</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium,
+          impedit!
+        </p>
+        <p class="orange-text">> Learn More</p>
+      </div>
+    </div>
+    <div class="cafe">cafe</div>
   </div>
 </template>
 
@@ -86,6 +101,17 @@ export default {
 <style lang="scss" scoped>
 #container {
   background: linear-gradient(#1a356c, #0f2043);
+}
+
+.btn {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: -100px;
+  background: #e8af30;
+  padding: 20px;
+  width: 300px;
+  align-self: center;
+  font-size: 30px;
 }
 .orange-text {
   color: #e8af30;
@@ -110,7 +136,7 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 500px;
+  height: 600px;
 
   .left-block {
     display: flex;
@@ -132,17 +158,45 @@ export default {
     background: url("../assets/images/home-2.png") no-repeat center center;
     background-size: 1300px 700px;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    p {
+      margin-left: 40px;
+    }
   }
 }
-
-.btn {
+.student-d {
+  background: url("../assets/images/home-1.png") no-repeat center center;
+  height: 650px;
+  width: 72%;
+  z-index: 1;
+  position: relative;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: auto;
   margin-top: -100px;
-  background: #e8af30;
-  padding: 20px;
-  width: 300px;
-  align-self: center;
-  font-size: 30px;
+  .student-text {
+    text-align: left;
+    background: #000;
+    height: 200px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+  }
+}
+.detail {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+}
+.cafe {
+  height: 1000px;
+  background: #fff;
+  color: #333;
 }
 </style>
