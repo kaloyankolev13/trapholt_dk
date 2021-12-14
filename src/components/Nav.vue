@@ -37,6 +37,12 @@
           <li>
             <router-link to="/exhibitions">Exhibitions</router-link>
           </li>
+          <li>
+            <router-link to="/contact">Contact</router-link>
+          </li>
+          <li>
+            <router-link to="/subscriptions">Subscriptions</router-link>
+          </li>
         </ul>
       </div>
     </div>
