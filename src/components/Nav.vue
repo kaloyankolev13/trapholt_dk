@@ -2,7 +2,34 @@
   <div>
     <div id="container">
       <div class="flex-items">
-        <h1>hello</h1>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="250"
+          height="72"
+          viewBox="0 0 336 72"
+        >
+          <g id="Group_1" data-name="Group 1" transform="translate(-209 -82)">
+            <rect
+              id="Rectangle_2"
+              data-name="Rectangle 2"
+              width="232"
+              height="72"
+              transform="translate(313 82)"
+              fill="#e8af30"
+            />
+            <text
+              id="TRAPHOLT"
+              transform="translate(209 89.664)"
+              fill="#fff"
+              font-size="50"
+              font-family="MicrosoftSansSerif, Microsoft Sans Serif"
+            >
+              <tspan x="0" y="46">TRA</tspan>
+              <tspan y="46" fill="#0f2043">PHOLT</tspan>
+            </text>
+          </g>
+        </svg>
+
         <ul class="links">
           <li>
             <router-link to="/">Home</router-link>
