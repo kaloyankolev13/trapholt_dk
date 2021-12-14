@@ -43,7 +43,7 @@
       </div>
       <div class="slider-text">
         <p class="slider-text-item">Exhibit / VERNER PANTON</p>
-        <h1 class="slider-text-item">COLORING A NEW WEORLD</h1>
+        <h1 class="slider-text-item">COLORING A NEW WORLD</h1>
         <p class="link slider-text-item">Learn more</p>
       </div>
     </div>

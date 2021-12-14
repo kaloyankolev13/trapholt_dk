@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="container">
     <Slider />
     <div class="content">
       <div class="working-hours">
@@ -54,6 +54,23 @@
         <p>Plan your visit</p>
       </div>
     </div>
+    <div class="block">
+      <div class="left-block">
+        <h1>Your next school trip</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
+          dolores quae ducimus neque perferendis consequatur hic. Aperiam harum
+          dolor omnis aut quaerat ut tempore, beatae magni deserunt blanditiis
+          corrupti quis, reprehenderit qui distinctio, ipsum necessitatibus
+          totam? Voluptates veniam quam architecto.
+        </p>
+        <p class="orange-text">> School trip at trapholt</p>
+      </div>
+      <div class="right-block">
+        <p>Æblehaven 23</p>
+        <p>Kolding 6000</p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -67,6 +84,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+#container {
+  background: linear-gradient(#1a356c, #0f2043);
+}
+.orange-text {
+  color: #e8af30;
+}
 .working-hours {
   margin-top: -100px;
   justify-content: flex-start;
@@ -82,6 +105,34 @@ export default {
   display: flex;
   justify-content: space-between;
   width: 85%;
+}
+.block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 500px;
+
+  .left-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    width: 60%;
+    background: #f3f3f3;
+    color: #333;
+    height: 100%;
+    padding: 50px;
+    p {
+      width: 40%;
+      margin-top: 40px;
+    }
+  }
+  .right-block {
+    width: 40%;
+    background: url("../assets/images/home-2.png") no-repeat center center;
+    background-size: 1300px 700px;
+    height: 100%;
+  }
 }
 
 .btn {
