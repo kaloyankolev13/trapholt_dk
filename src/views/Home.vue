@@ -85,7 +85,23 @@
         <p class="orange-text">> Learn More</p>
       </div>
     </div>
-    <div class="cafe">cafe</div>
+    <div class="cafe">
+      <div class="cafe-content">
+        <img src="../assets/images/cafe.png" alt="Picture of the coffee shop" />
+        <span class="orange-text">_________________</span>
+        <div class="cafe-text">
+          <h1>CAFE HEYOKAY IN TRAPHOLT</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            quibusdam, quisquam.
+          </p>
+          <div class="cafe-links">
+            <p class="orange-text">> Upcoming Events in our café</p>
+            <p class="orange-text">> Reserve for your party</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -198,5 +214,25 @@ export default {
   height: 1000px;
   background: #fff;
   color: #333;
+  &-content {
+    width: 72%;
+    margin: auto;
+    padding-top: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    img {
+      width: 500px;
+    }
+  }
+  &-text {
+    text-align: left;
+    h1 {
+      margin-bottom: 40px;
+    }
+  }
+  &-links {
+    margin-top: 40px;
+  }
 }
 </style>

@@ -1,8 +1,7 @@
 <template>
-  <div id="nav">
-    <Nav />
-  </div>
+  <Nav />
   <router-view />
+  <Footer />
 </template>
 
 <style lang="scss">
@@ -21,9 +20,11 @@
 </style>
 <script>
 import Nav from "./components/Nav.vue";
+import Footer from "./components/Footer.vue";
 export default {
   components: {
     Nav,
+    Footer,
   },
 };
 </script>
