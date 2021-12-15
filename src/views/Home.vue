@@ -96,8 +96,8 @@
             quibusdam, quisquam.
           </p>
           <div class="cafe-links">
-            <p class="orange-text">> Upcoming Events in our café</p>
-            <p class="orange-text">> Reserve for your party</p>
+            <p class="orange-text"><b>> Upcoming Events in our café</b></p>
+            <p class="orange-text"><b>> Reserve for your party</b></p>
           </div>
         </div>
       </div>

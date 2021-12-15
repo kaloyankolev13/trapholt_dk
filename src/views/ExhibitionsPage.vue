@@ -1,5 +1,17 @@
 <template>
   <div class="about">
-    <h1 style="color: black">This is the exhibitions page</h1>
+    <BabylonExamples />
   </div>
 </template>
+
+<script>
+import BabylonExamples from "../components/BabylonExamples.vue";
+export default {
+  components: {
+    BabylonExamples,
+  },
+};
+</script>
+
+<style lang="scss" scoped>
+</style>
