@@ -1,12 +1,23 @@
 <template>
-  <div>
-    <h1 style="color: black">This is the contact page</h1>
+  <div class="about">
+    <BabylonExamples />
+    <h1>Contact Us</h1>
   </div>
 </template>
 
 <script>
-export default {};
+import BabylonExamples from "../components/BabylonExamples.vue";
+export default {
+  name: "Exhibition",
+  components: {
+    BabylonExamples,
+  },
+};
 </script>
 
 <style lang="scss" scoped>
+.about {
+  display: flex;
+  color: #333;
+}
 </style>

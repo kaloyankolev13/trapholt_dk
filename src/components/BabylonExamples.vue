@@ -20,8 +20,8 @@ export default defineComponent({
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 div {
-  width: 70%;
-  height: 70%;
+  width: 50%;
+  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;

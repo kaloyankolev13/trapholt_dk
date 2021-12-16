@@ -81,7 +81,7 @@ export default {
     background: linear-gradient(#1a356c, #0f2043);
     height: 500px;
     box-shadow: 10px 5px 5px #333;
-    line-height: rem;
+    line-height: 2rem;
   }
 }
 ul {
@@ -91,7 +91,9 @@ ul {
     text-decoration: none;
   }
   h3 {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #e8af30;
+    width: 30%;
+    margin: auto;
   }
 }
 img {

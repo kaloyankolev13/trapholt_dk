@@ -1,17 +1,13 @@
 <template>
-  <div class="about">
-    <p style="color: #333">{{ exhibitions[1].name }}</p>
-    <BabylonExamples />
+  <div>
+    <h1>Hello</h1>
+    <h1 name="exhibitions.name"></h1>
   </div>
 </template>
 
 <script>
-import BabylonExamples from "../components/BabylonExamples.vue";
 export default {
-  name: "Exhibition",
-  components: {
-    BabylonExamples,
-  },
+  props: ["id", "name", "description", "image"],
 };
 </script>
 

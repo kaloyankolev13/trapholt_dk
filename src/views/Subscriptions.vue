@@ -1,6 +1,5 @@
 <template>
   <div>
-    t
     <h1 style="color: black">This is the subscription page</h1>
   </div>
 </template>
