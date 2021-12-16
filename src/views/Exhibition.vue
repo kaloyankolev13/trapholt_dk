@@ -8,6 +8,7 @@
 <script>
 import BabylonExamples from "../components/BabylonExamples.vue";
 export default {
+  name: "Exhibition",
   components: {
     BabylonExamples,
   },
