@@ -9,7 +9,7 @@
         <router-link
           :to="{ name: 'exhibition', params: { id: exhibition.id } }"
         >
-          <img alt="exhibition" :src="exhibition.image" />
+          <img class="img" alt="exhibition" :src="exhibition.image" />
           <h3>{{ exhibition.name }}</h3>
           <p>{{ exhibition.description }}</p>
         </router-link>
@@ -34,7 +34,7 @@ export default {
           id: 2,
           name: "Exhibition 2",
           description: "This is the second exhibition",
-          image: "2.jpg",
+          image: require("../assets/exhibitions-img/2.jpg"),
         },
         {
           id: 3,
@@ -79,25 +79,34 @@ export default {
   grid-auto-rows: minmax(100px, auto);
   .featured-exhibitions {
     background: linear-gradient(#1a356c, #0f2043);
-    height: 500px;
+    height: 400px;
     box-shadow: 10px 5px 5px #333;
     line-height: 2rem;
+
+    img {
+      width: 100%;
+      height: 80%;
+      object-fit: cover;
+    }
   }
 }
 ul {
   list-style: none;
-  a {
-    color: #f3f3f3;
-    text-decoration: none;
+  li {
+    a {
+      color: #f3f3f3;
+      text-decoration: none;
+    }
+    h3 {
+      border-bottom: 1px solid #e8af30;
+      width: 50%;
+      margin-left: 20px;
+      text-align: left;
+    }
+    p {
+      text-align: right;
+      margin-right: 20px;
+    }
   }
-  h3 {
-    border-bottom: 1px solid #e8af30;
-    width: 30%;
-    margin: auto;
-  }
-}
-img {
-  width: 100%;
-  height: 80%;
 }
 </style>
