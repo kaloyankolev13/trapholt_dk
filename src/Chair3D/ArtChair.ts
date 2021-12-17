@@ -2,10 +2,7 @@ import {
   Scene,
   Engine,
   Vector3,
-  MeshBuilder,
   CubeTexture,
-  Texture,
-  PBRMaterial,
   SceneLoader,
   ArcRotateCamera,
   Color4,
@@ -53,48 +50,9 @@ export class ArtChair {
 
     scene.environmentTexture = envTex;
 
-    // scene.createDefaultSkybox(envTex, true);
-
     scene.environmentIntensity = 0.5;
 
     return scene;
-  }
-
-  CreateGround(): void {
-    const ground = MeshBuilder.CreateGround(
-      'ground',
-      { width: 10, height: 10 },
-      this.scene
-    );
-
-    ground.material = this.CreateAsphalt();
-  }
-
-  CreateAsphalt(): PBRMaterial {
-    const pbr = new PBRMaterial('pbr', this.scene);
-    pbr.albedoTexture = new Texture(
-      './textures/asphalt/asphalt_diffuse.jpg',
-      this.scene
-    );
-
-    pbr.bumpTexture = new Texture(
-      './textures/asphalt/asphalt_normal.jpg',
-      this.scene
-    );
-
-    pbr.invertNormalMapX = true;
-    pbr.invertNormalMapY = true;
-
-    pbr.useAmbientOcclusionFromMetallicTextureRed = true;
-    pbr.useRoughnessFromMetallicTextureGreen = true;
-    pbr.useMetallnessFromMetallicTextureBlue = true;
-
-    pbr.metallicTexture = new Texture(
-      './textures/asphalt/asphalt_ao_rough_metal.jpg',
-      this.scene
-    );
-
-    return pbr;
   }
 
   async CreateChair(): Promise<void> {
@@ -105,7 +63,5 @@ export class ArtChair {
     );
 
     models.meshes[0].position = new Vector3(0, 0, 0);
-
-    console.log('models', models);
   }
 }

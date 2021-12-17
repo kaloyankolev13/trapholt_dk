@@ -91,7 +91,7 @@ export default {
   .featured-exhibitions {
     background: linear-gradient(#1a356c, #0f2043);
     height: 400px;
-    box-shadow: 3px 5px 10px #333;
+    box-shadow: px 5px 10px #333;
     line-height: 2rem;
 
     img {
