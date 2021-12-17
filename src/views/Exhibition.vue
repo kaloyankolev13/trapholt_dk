@@ -2,17 +2,30 @@
   <div id="container">
     <div class="main">
       <div class="img">
-        <img src="../assets/exhibitions-img/1.jpg" alt="" />
+        <img :src="data.image" alt="" />
       </div>
+      <BabylonExamples v-if="data.id === 2"></BabylonExamples>
       <div class="info">
-        <h1>Exhibiton Name</h1>
+        <h1>{{ data.name }}</h1>
+        <p>{{ data.name }}</p>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import BabylonExamples from "../components/BabylonExamples.vue";
+export default {
+  props: {
+    data: {
+      type: Object,
+      required: true,
+    },
+  },
+  components: {
+    BabylonExamples,
+  },
+};
 </script>
 
 <style lang="scss" scoped>

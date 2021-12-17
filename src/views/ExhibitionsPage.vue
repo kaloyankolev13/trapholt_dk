@@ -1,26 +1,32 @@
 <template>
-  <div id="container">
+  <div v-if="!selectedData" id="container">
     <ul class="exhibitions">
       <li
         v-for="exhibition in exhibitions"
         :key="exhibition.id"
         class="featured-exhibitions"
+        @click="handleClick(exhibition)"
       >
-        <router-link
+        <!-- <router-link
           :to="{ name: 'exhibition', params: { id: exhibition.id } }"
-        >
-          <img class="img" alt="exhibition" :src="exhibition.image" />
-          <h3>{{ exhibition.name }}</h3>
-          <p>{{ exhibition.description }}</p>
-        </router-link>
+        > -->
+        <img class="img" alt="exhibition" :src="exhibition.image" />
+        <h3>{{ exhibition.name }}</h3>
+        <p>{{ exhibition.description }}</p>
+        <!-- </router-link> -->
       </li>
     </ul>
   </div>
+  <Exhibition v-else :data="selectedData" />
 </template>
 
 <script>
+import Exhibition from "./Exhibition.vue";
 export default {
   name: "ExhibitionsPage",
+  components: {
+    Exhibition,
+  },
   data() {
     return {
       exhibitions: [
@@ -61,14 +67,19 @@ export default {
           image: require("../assets/exhibitions-img/6.jpg"),
         },
       ],
+      selectedData: null,
     };
+  },
+  methods: {
+    handleClick(exhibition) {
+      this.selectedData = exhibition;
+    },
   },
 };
 </script>
 
 <style lang="scss" scoped>
 #container {
-  color: red;
   width: 72%;
   margin: 50px auto;
 }
@@ -80,7 +91,7 @@ export default {
   .featured-exhibitions {
     background: linear-gradient(#1a356c, #0f2043);
     height: 400px;
-    box-shadow: 10px 5px 5px #333;
+    box-shadow: 3px 5px 10px #333;
     line-height: 2rem;
 
     img {

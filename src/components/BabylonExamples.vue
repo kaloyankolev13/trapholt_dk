@@ -29,15 +29,6 @@ div {
   background: none;
 }
 
-p {
-  color: white;
-  background: none;
-  margin-bottom: 1rem;
-  font-family: "Roboto Condensed";
-  font-weight: 400;
-  font-size: 2rem;
-}
-
 canvas {
   width: 100%;
   height: 100%;
