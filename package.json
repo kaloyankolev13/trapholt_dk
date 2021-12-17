@@ -6,12 +6,13 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "start": "node server.js"
+    "start": "node server.ts"
   },
   "dependencies": {
     "@babylonjs/core": "^4.2.0",
     "@babylonjs/loaders": "^4.2.0",
     "express-vue": "^5.16.0",
+    "make": "^0.8.1",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0"
